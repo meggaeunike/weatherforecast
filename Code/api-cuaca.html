@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>API Cuaca</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png">
+          <a class="navbar-brand" href="./home.html">Weather Forecast</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./api-kota.html">API Kota</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./api-cuaca.html">API Cuaca</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./detail-kota.html">Detail Kota</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <br>
+    <div class="jumbotron api-kota-content">
+        <h1 class="display-4 text-center">7Timer!</h1>
+        <h1 class="display-5 font-weight-light text-center">Weather Forecast API</h1>
+        <br>
+        <img class="img-responsive" src="./Asset/product-2.jpeg">
+        <br>
+        <br>
+        <p class="lead">Parameter dari API 7Timer!</p>
+        <p class="lead">lon, lat : Geographic coordinates of the specified site, must be given as pure float numbers, such as +23.090 or -23.090. At this stage, the precision of any incoming coordinate float number is expected to be 0.001. Incoming float with higher precision will be rounded.</p>
+        <p class="lead">ac       : Altitude Correction, only applicable in ASTRO forecast. Should be 0 (default), 2 or 7.</p>
+        <p class="lead">lang     : Language. Not applicable in METEO product.</p>
+        <p class="lead">unit     : Metric or British</p>
+        <p class="lead">output   : should be internal (for graphical output), xml or json.</p>
+        <p class="lead">tzshift  : Adjustment of timezone, should be 0, 1 or -1.</p>
+        <br>
+        <p class="lead">API Output Example (JSON) :</p>
+        <img class="img-responsive" max-width=auto src="./Asset/api-weather.jpeg">
+        <br>
+        <br>
+        <p class="lead">API :</p>
+        <p class="lead">http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=xml</p>
+        <p class="lead">There are four parameters that need to be set to successfully call the API: lon and lat for geographic coordinate of the location, product for the product you wish to use (any of "astro", "civil", "civillight", "meteo" or "two"), and output for the standard you wish to use (either "xml" or "json").</p>
+        <hr class="my-4">
+      </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

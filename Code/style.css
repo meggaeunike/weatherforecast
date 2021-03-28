@@ -1,0 +1,31 @@
+.tengah-kiri{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 70%;
+}
+.artikel{
+    margin-bottom: 10px;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.box{
+    margin-left: -13%;
+    margin-right: 40%;
+}
+.padding-right{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.api-kota-content{
+    margin-top :10pt;
+    margin-left:30%;
+    margin-right:30%;
+    margin-bottom:10pt;
+}
+body {
+    background-image: url("/Code/Asset/664529.jpg");
+  }
